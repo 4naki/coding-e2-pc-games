@@ -1,4 +1,4 @@
-@name SpaceScape
+@name SpaceScape (WIP, made for my e2 computer)
 @inputs Start TextEntry:string Stop
 @outputs Picture:string On SoundPath:string Sound
 @persist On StringOut:string Picture:string EmptyHoldTime LetterHoldTime MainMenuOpenTime Ready 
@@ -13,13 +13,13 @@ if(first()){
     LetterHoldTime=1500
     MainMenuOpenTime=4000
     #Skip To
-    timer("mainmenuscreen",100)
-    On=1
+    #timer("mainmenuscreen",100)
+    #On=1
     
     UseSounds=1
 }
 if(changed(Start)&Start){
-    #timer("start",100)
+    timer("start",100)
     StringOut=""
     On=1
 }
